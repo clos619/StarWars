@@ -53,12 +53,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Rank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2y-Va-Q09">
-                                <rect key="frame" x="45" y="194" width="190" height="81"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="eye color" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJS-zr-uNo">
                                 <rect key="frame" x="45" y="283" width="190" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -73,17 +67,24 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1a-ba-PUD">
+                                <rect key="frame" x="112" y="123" width="190" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Homeworld" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hha-ap-LyN">
-                                <rect key="frame" x="45" y="478" width="190" height="81"/>
+                                <rect key="frame" x="45" y="443" width="190" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1a-ba-PUD">
-                                <rect key="frame" x="112" y="123" width="190" height="81"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RV3-Gl-rVS">
+                                <rect key="frame" x="45" y="207" width="125" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -93,7 +94,6 @@
                         <constraints>
                             <constraint firstItem="Lxx-WY-LFd" firstAttribute="trailing" secondItem="D7q-BK-VDg" secondAttribute="trailing" id="0Pe-uA-pPJ"/>
                             <constraint firstItem="D7q-BK-VDg" firstAttribute="leading" secondItem="Lxx-WY-LFd" secondAttribute="leading" id="9LT-2h-lgZ"/>
-                            <constraint firstItem="o2y-Va-Q09" firstAttribute="top" secondItem="D7q-BK-VDg" secondAttribute="bottom" id="sWJ-CM-BSa"/>
                         </constraints>
                     </view>
                     <connections>
@@ -101,7 +101,7 @@
                         <outlet property="detailHairColorLabel" destination="k17-po-YGg" id="PQy-vR-1tF"/>
                         <outlet property="detailHomeWorldLabel" destination="hha-ap-LyN" id="fc8-br-jev"/>
                         <outlet property="detailNameLabel" destination="w1a-ba-PUD" id="uZp-V7-ljd"/>
-                        <outlet property="detailRankLabel" destination="o2y-Va-Q09" id="MVW-mZ-WKQ"/>
+                        <outlet property="detailRankLabel" destination="RV3-Gl-rVS" id="6Fz-De-gVf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SxJ-JJ-wgh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

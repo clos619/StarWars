@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A860888259100110012F6E1 /* HomeWorlds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A860887259100110012F6E1 /* HomeWorlds.swift */; };
 		3A9A4ACF258CEEDB0078F1DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A4ACE258CEEDB0078F1DB /* AppDelegate.swift */; };
 		3A9A4AD1258CEEDB0078F1DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A4AD0258CEEDB0078F1DB /* SceneDelegate.swift */; };
 		3A9A4AD3258CEEDB0078F1DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9A4AD2258CEEDB0078F1DB /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A860887259100110012F6E1 /* HomeWorlds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWorlds.swift; sourceTree = "<group>"; };
 		3A9A4ACB258CEEDB0078F1DB /* StarWarsCharacters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarWarsCharacters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9A4ACE258CEEDB0078F1DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A9A4AD0258CEEDB0078F1DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				3A9A4AE9258CF4E00078F1DB /* NetworkManager.swift */,
 				3A9A4AF9258D11790078F1DB /* StarWarsTableViewCell.swift */,
 				3A9A4AFA258D11790078F1DB /* StarWarsTableViewCell.xib */,
+				3A860887259100110012F6E1 /* HomeWorlds.swift */,
 			);
 			path = StarWarsCharacters;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				3A9A4ACF258CEEDB0078F1DB /* AppDelegate.swift in Sources */,
 				3A9A4AD1258CEEDB0078F1DB /* SceneDelegate.swift in Sources */,
 				3A9A4AE7258CEF7A0078F1DB /* StarWars.swift in Sources */,
+				3A860888259100110012F6E1 /* HomeWorlds.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

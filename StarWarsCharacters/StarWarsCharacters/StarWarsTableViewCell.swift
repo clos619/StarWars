@@ -25,9 +25,8 @@ class StarWarsTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func configure(with sw: SWResults) {
-        
-        self.nameLabel.text = sw.results[0].name
-        
+        //let mainVC = ViewController()
+        self.nameLabel?.text = sw.results[0].name
 
         DispatchQueue.main.async {
             let vc = ViewController()
