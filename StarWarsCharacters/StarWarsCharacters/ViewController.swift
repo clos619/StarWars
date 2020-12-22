@@ -15,11 +15,10 @@ class ViewController: UIViewController {
     var starWarsMain : [SWResults] = []
     var starWarsHomeWorld : [HomeWorld] = []
     var starWarsPlanets : [String] = []
-    let eyecolor: String = ""
     let starwarsAPI = "https://swapi.dev/api/people/"
     var rank : [String] = [" Jedi Master"," Droid"," Droid"," Sith Lord"," Senator"," Farmer"," Farmer"," Droid"," Unknown"," Jedi Master"]
+    var attunement = ["Light Side","Neutral","Neutral","Dark Side","Light Side","Neutral","Neutral","Neutral","Light Side"]
     var worlds : [String] = []
-    var homeWorld: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         self.starWarsTableView.dataSource = self
@@ -76,17 +75,17 @@ class ViewController: UIViewController {
 
 extension ViewController : UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        getHomePlanet()
         let storyboard = UIStoryboard(name: "Main", bundle:  nil)
         let swDetailScreen = storyboard.instantiateViewController(identifier: "CharacterDetailViewController") as! CharacterDetailViewController
        
-       
-        swDetailScreen.name = starWarsMain[indexPath.row].results[indexPath.row].name
-        swDetailScreen.eyeColor = starWarsMain[indexPath.row].results[indexPath.row].eyeColor
-        swDetailScreen.hairColor = starWarsMain[indexPath.row].results[indexPath.row].hairColor
+        swDetailScreen.name = starWarsMain[0].results[indexPath.row].name
+        swDetailScreen.eyeColor = starWarsMain[0].results[indexPath.row].eyeColor
+        swDetailScreen.hairColor = starWarsMain[0].results[indexPath.row].hairColor
         swDetailScreen.rank = rank[indexPath.row]
-        homeWorld = starWarsMain[indexPath.row].results[indexPath.row].homeWorld
+        swDetailScreen.attunement = attunement[indexPath.row]
         
-       //swDetailScreen.planet = starWarsHomeWorld[0].name
+        swDetailScreen.planet = starWarsHomeWorld.first?.name ?? "loading"        
         self.navigationController?.pushViewController(swDetailScreen, animated: true)
         }
         
